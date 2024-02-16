@@ -42,6 +42,7 @@
         }
     });
     
+
     
     // Back to top button
     $(window).scroll(function () {
@@ -121,6 +122,17 @@
         loop: true,
     });
 
-    
+    function downloadCV() {
+    // Disable the button
+    document.getElementById('downloadButton').disabled = true;
+
+    // Enable the button after 5 seconds
+    setTimeout(function () {
+        document.getElementById('downloadButton').disabled = false;
+    }, 5000);
+
+}
 })(jQuery);
+
+
 
