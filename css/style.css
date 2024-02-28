@@ -433,3 +433,7 @@
     opacity: 0.3;
     cursor: not-allowed;
 }
+#container-services{
+    background-image: url(../img/illustrations/Community.png);
+    background-size: cover;
+}
