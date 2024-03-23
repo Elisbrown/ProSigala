@@ -35,12 +35,7 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-     <script src="https://www.google.com/recaptcha/api.js"></script>
-     <script>
-   function onSubmit(token) {
-     document.getElementById("contact-form").submit();
-   }
- </script>
+     
     
     <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -647,7 +642,7 @@
                                     <button class="btn btn-primary py-3 px-5" class="g-recaptcha" 
                                     data-sitekey="6LdUi6IpAAAAADgw02JTlkWLz3FmbZqWzXGLvA74" 
                                     data-callback='onSubmit' 
-                                    data-action='submit'">Send Message</button>
+                                    data-action='submit' type="submit">Send Message</button>
                                 </div>
                             </div>
                         </form>
@@ -703,6 +698,12 @@
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+     <script>
+   function onSubmit(token) {
+     document.getElementById("contact-form").submit();
+   }
+ </script>
     <script>
         $(document).ready(function () {
     // Handle form submission
